@@ -16,28 +16,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59be55bd-60fc-466a-9c1f-cb86bf52ec35" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/ro/pub/cs/systems/eim/lab05/startedserviceactivity/StartedServiceActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/ro/pub/cs/systems/eim/lab05/startedserviceactivity/StartedServiceBroadcastReceiver.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../labtasks/StartedService/StartedServiceActivity/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../labtasks/StartedService/StartedServiceActivity/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../labtasks/StartedService/StartedServiceActivity/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../labtasks/StartedService/StartedServiceActivity/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ro/pub/cs/systems/eim/lab05/startedserviceactivity/Constants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ro/pub/cs/systems/eim/lab05/startedserviceactivity/Constants.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ro/pub/cs/systems/eim/lab05/startedserviceactivity/MainActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ro/pub/cs/systems/eim/lab05/startedserviceactivity/MessageViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ro/pub/cs/systems/eim/lab05/startedserviceactivity/StartedServoiceBroadcastReceiver.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ro/pub/cs/systems/eim/lab05/startedserviceactivity/ui/theme/Color.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ro/pub/cs/systems/eim/lab05/startedserviceactivity/ui/theme/Theme.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ro/pub/cs/systems/eim/lab05/startedserviceactivity/ui/theme/Type.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-    </list>
+    <list default="true" id="59be55bd-60fc-466a-9c1f-cb86bf52ec35" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,9 +41,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2eDUxfohT32ojjLjUAFrKQmZlyr" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -78,7 +57,7 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "lab5-kotlin",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>

@@ -4,28 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca10abd8-9c06-4cea-b005-56fb0b79557c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../solutions_kotlin/startedServiceActivity/app/src/main/java/ro/pub/cs/systems/eim/lab05/startedserviceactivity/StartedServiceActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../solutions_kotlin/startedServiceActivity/app/src/main/java/ro/pub/cs/systems/eim/lab05/startedserviceactivity/StartedServiceBroadcastReceiver.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../StartedService/StartedServiceActivity/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../StartedService/StartedServiceActivity/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../StartedService/StartedServiceActivity/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../StartedService/StartedServiceActivity/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../solutions_kotlin/startedServiceActivity/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../solutions_kotlin/startedServiceActivity/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../solutions_kotlin/startedServiceActivity/app/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../solutions_kotlin/startedServiceActivity/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../solutions_kotlin/startedServiceActivity/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../solutions_kotlin/startedServiceActivity/app/src/main/java/ro/pub/cs/systems/eim/lab05/startedserviceactivity/Constants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../solutions_kotlin/startedServiceActivity/app/src/main/java/ro/pub/cs/systems/eim/lab05/startedserviceactivity/Constants.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../solutions_kotlin/startedServiceActivity/app/src/main/java/ro/pub/cs/systems/eim/lab05/startedserviceactivity/MainActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../solutions_kotlin/startedServiceActivity/app/src/main/java/ro/pub/cs/systems/eim/lab05/startedserviceactivity/MessageViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../solutions_kotlin/startedServiceActivity/app/src/main/java/ro/pub/cs/systems/eim/lab05/startedserviceactivity/StartedServoiceBroadcastReceiver.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../solutions_kotlin/startedServiceActivity/app/src/main/java/ro/pub/cs/systems/eim/lab05/startedserviceactivity/ui/theme/Color.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../solutions_kotlin/startedServiceActivity/app/src/main/java/ro/pub/cs/systems/eim/lab05/startedserviceactivity/ui/theme/Theme.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../solutions_kotlin/startedServiceActivity/app/src/main/java/ro/pub/cs/systems/eim/lab05/startedserviceactivity/ui/theme/Type.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../solutions_kotlin/startedServiceActivity/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../solutions_kotlin/startedServiceActivity/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../solutions_kotlin/startedServiceActivity/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../solutions_kotlin/startedServiceActivity/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../solutions_kotlin/startedServiceActivity/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../solutions_kotlin/startedServiceActivity/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../solutions_kotlin/startedServiceActivity/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../solutions_kotlin/startedServiceActivity/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../solutions_kotlin/startedServiceActivity/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../solutions_kotlin/startedServiceActivity/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../solutions_kotlin/startedServiceActivity/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../solutions_kotlin/startedServiceActivity/settings.gradle.kts" afterDir="false" />
-    </list>
+    <list default="true" id="ca10abd8-9c06-4cea-b005-56fb0b79557c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,9 +21,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2eDVqP0slQJqOG4lZDNHub6QA97" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -59,7 +38,7 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "lab5-kotlin",
     "last_opened_file_path": "/Users/nicolaenitu/AndroidStudioProjects/Laborator05/labtasks/StartedService - Kotlin/startedService",
     "show.migrate.to.gradle.popup": "false"
   }
