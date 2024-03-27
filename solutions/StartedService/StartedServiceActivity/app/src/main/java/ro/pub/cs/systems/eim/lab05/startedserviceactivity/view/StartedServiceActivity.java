@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.widget.TextView;
 
 import ro.pub.cs.systems.eim.lab05.startedserviceactivity.R;
@@ -22,11 +23,12 @@ public class StartedServiceActivity extends AppCompatActivity {
         setContentView(R.layout.activity_started_service);
 
         messageTextView = (TextView)findViewById(R.id.message_text_view);
+        messageTextView.setMovementMethod(new ScrollingMovementMethod());
 
         // TODO: exercise 6 - start the service
         Intent intent = new Intent();
         intent.setComponent(new ComponentName("ro.pub.cs.systems.eim.lab05.startedservice", "ro.pub.cs.systems.eim.lab05.startedservice.service.StartedService"));
-        startService(intent);
+        startForegroundService(intent);
 
         // TODO: exercise 8a - create an instance of the StartedServiceBroadcastReceiver broadcast receiver
         startedServiceBroadcastReceiver = new StartedServiceBroadcastReceiver(messageTextView);
