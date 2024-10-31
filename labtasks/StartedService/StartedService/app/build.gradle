@@ -5,6 +5,8 @@ android {
     buildToolsVersion "29.0.2"
     defaultConfig {
         applicationId "ro.pub.cs.systems.eim.lab05.startedservice"
+        namespace "ro.pub.cs.systems.eim.lab05.startedservice"
+
         minSdkVersion 24
         targetSdkVersion 27
         versionCode 1
