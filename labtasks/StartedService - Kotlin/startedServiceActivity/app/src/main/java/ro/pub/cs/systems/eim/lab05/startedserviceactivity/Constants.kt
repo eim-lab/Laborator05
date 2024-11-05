@@ -1,7 +1,5 @@
 package ro.pub.cs.systems.eim.lab05.startedserviceactivity
 
-package ro.pub.cs.systems.eim.lab05.startedservice.general
-
 import android.icu.text.SimpleDateFormat
 import android.icu.util.Calendar
 
