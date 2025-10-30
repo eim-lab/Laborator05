@@ -16,7 +16,15 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59be55bd-60fc-466a-9c1f-cb86bf52ec35" name="Changes" comment="" />
+    <list default="true" id="59be55bd-60fc-466a-9c1f-cb86bf52ec35" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../solutions/StartedService/StartedServiceActivity/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../solutions/StartedService/StartedServiceActivity/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions/StartedService/StartedServiceActivity/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../solutions/StartedService/StartedServiceActivity/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions/StartedService/StartedServiceActivity/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../solutions/StartedService/StartedServiceActivity/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions/StartedService/StartedServiceActivity/.idea/runConfigurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../solutions/StartedService/StartedServiceActivity/.idea/runConfigurations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../startedService/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../startedService/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../startedService/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../startedService/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +33,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/nicolaenitu/.android/avd/Pixel_3a_API_34_extension_level_7_arm64-v8a.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -41,6 +49,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "nicolae1099"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/eim-lab/Laborator05.git",
+    "accountId": "3685f342-c7f0-4612-8a08-77f575b679e4"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -54,16 +74,21 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "android.gradle.sync.needed": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "lab5-kotlin",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/nicolaenitu/AndroidStudioProjects/Laborator05/solutions_kotlin/startedServiceActivity",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
-      <module name="StartedServiceActivity.app.main" />
+      <module name="StartedServiceActivity.app" />
+      <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
@@ -71,13 +96,16 @@
       <option name="PM_INSTALL_OPTIONS" value="" />
       <option name="ALL_USERS" value="false" />
       <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="ALLOW_ASSUME_VERIFIED" value="false" />
       <option name="CLEAR_APP_STORAGE" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
+      <option name="RESTORE_FRESH_INSTALL_ONLY" value="false" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
       <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
@@ -122,6 +150,7 @@
         <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
       <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
