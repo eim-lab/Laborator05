@@ -43,6 +43,8 @@ public class ProcessingThread extends Thread {
                 intent.putExtra(Constants.DATA, Constants.ARRAY_LIST_DATA);
                 break;
         }
+        // Set the target package for cross-app broadcasts
+        intent.setPackage("ro.pub.cs.systems.eim.lab05.startedserviceactivity");
         context.sendBroadcast(intent);
     }
 

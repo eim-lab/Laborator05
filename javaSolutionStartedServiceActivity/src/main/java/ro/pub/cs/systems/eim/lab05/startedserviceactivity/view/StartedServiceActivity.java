@@ -1,9 +1,11 @@
 package ro.pub.cs.systems.eim.lab05.startedserviceactivity.view;
 
 import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import androidx.appcompat.app.AppCompatActivity;
+import android.os.Build;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.widget.TextView;
@@ -46,7 +48,11 @@ public class StartedServiceActivity extends AppCompatActivity {
         super.onResume();
 
         // TODO: exercise 8c - register the broadcast receiver with the corresponding intent filter
-        registerReceiver(startedServiceBroadcastReceiver, startedServiceIntentFilter);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            registerReceiver(startedServiceBroadcastReceiver, startedServiceIntentFilter, Context.RECEIVER_NOT_EXPORTED);
+        } else {
+            registerReceiver(startedServiceBroadcastReceiver, startedServiceIntentFilter);
+        }
     }
 
     @Override

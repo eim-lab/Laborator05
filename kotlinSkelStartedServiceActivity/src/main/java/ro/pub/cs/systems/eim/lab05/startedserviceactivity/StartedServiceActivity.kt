@@ -1,9 +1,9 @@
 package ro.pub.cs.systems.eim.lab05.startedserviceactivity
 
+import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
-
-
+import android.os.Build
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -33,10 +33,22 @@ class StartedServiceActivity : AppCompatActivity() {
         super.onResume()
 
         // TODO: exercise 8c - register the broadcast receiver with the corresponding intent filter
+        // Note: RECEIVER_NOT_EXPORTED is required for Android 13+ (API 33+)
+        if (::startedServiceBroadcastReceiver.isInitialized && ::startedServiceIntentFilter.isInitialized) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                registerReceiver(startedServiceBroadcastReceiver, startedServiceIntentFilter, Context.RECEIVER_NOT_EXPORTED)
+            } else {
+                @Suppress("DEPRECATION")
+                registerReceiver(startedServiceBroadcastReceiver, startedServiceIntentFilter)
+            }
+        }
     }
 
     override fun onPause() {
         // TODO: exercise 8c - unregister the broadcast receiver
+        if (::startedServiceBroadcastReceiver.isInitialized) {
+            unregisterReceiver(startedServiceBroadcastReceiver)
+        }
 
         super.onPause()
     }
