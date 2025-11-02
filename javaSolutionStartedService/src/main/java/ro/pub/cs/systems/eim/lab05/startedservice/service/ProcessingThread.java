@@ -45,6 +45,7 @@ public class ProcessingThread extends Thread {
         }
         // Set the target package for cross-app broadcasts
         intent.setPackage("ro.pub.cs.systems.eim.lab05.startedserviceactivity");
+        Log.d(Constants.TAG, "Sending broadcast with action: " + intent.getAction() + " to package: " + intent.getPackage());
         context.sendBroadcast(intent);
     }
 

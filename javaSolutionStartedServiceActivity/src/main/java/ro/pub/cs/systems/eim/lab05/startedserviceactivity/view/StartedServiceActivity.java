@@ -18,19 +18,15 @@ public class StartedServiceActivity extends AppCompatActivity {
     private TextView messageTextView;
     private StartedServiceBroadcastReceiver startedServiceBroadcastReceiver;
     private IntentFilter startedServiceIntentFilter;
+    private boolean serviceStarted = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_started_service);
 
-        messageTextView = (TextView)findViewById(R.id.message_text_view);
+        messageTextView = findViewById(R.id.message_text_view);
         messageTextView.setMovementMethod(new ScrollingMovementMethod());
-
-        // TODO: exercise 6 - start the service
-        Intent intent = new Intent();
-        intent.setComponent(new ComponentName("ro.pub.cs.systems.eim.lab05.startedservice", "ro.pub.cs.systems.eim.lab05.startedservice.service.StartedService"));
-        startForegroundService(intent);
 
         // TODO: exercise 8a - create an instance of the StartedServiceBroadcastReceiver broadcast receiver
         startedServiceBroadcastReceiver = new StartedServiceBroadcastReceiver(messageTextView);
@@ -46,12 +42,21 @@ public class StartedServiceActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-
+        
         // TODO: exercise 8c - register the broadcast receiver with the corresponding intent filter
+        // Register with RECEIVER_EXPORTED for cross-app broadcasts
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            registerReceiver(startedServiceBroadcastReceiver, startedServiceIntentFilter, Context.RECEIVER_NOT_EXPORTED);
+            registerReceiver(startedServiceBroadcastReceiver, startedServiceIntentFilter, Context.RECEIVER_EXPORTED);
         } else {
             registerReceiver(startedServiceBroadcastReceiver, startedServiceIntentFilter);
+        }
+
+        // TODO: exercise 6 - start the service AFTER registering the receiver
+        if (!serviceStarted) {
+            Intent intent = new Intent();
+            intent.setComponent(new ComponentName("ro.pub.cs.systems.eim.lab05.startedservice", "ro.pub.cs.systems.eim.lab05.startedservice.service.StartedService"));
+            startForegroundService(intent);
+            serviceStarted = true;
         }
     }
 
