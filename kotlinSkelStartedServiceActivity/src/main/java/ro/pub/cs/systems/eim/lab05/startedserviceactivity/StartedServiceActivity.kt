@@ -37,9 +37,6 @@ class StartedServiceActivity : AppCompatActivity() {
         if (::startedServiceBroadcastReceiver.isInitialized && ::startedServiceIntentFilter.isInitialized) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
                 registerReceiver(startedServiceBroadcastReceiver, startedServiceIntentFilter, Context.RECEIVER_NOT_EXPORTED)
-            } else {
-                @Suppress("DEPRECATION")
-                registerReceiver(startedServiceBroadcastReceiver, startedServiceIntentFilter)
             }
         }
     }
@@ -63,10 +60,10 @@ class StartedServiceActivity : AppCompatActivity() {
     // get the message from the extra field of the intent
     // and display it in the messageTextView
 
-    override fun onNewIntent(intent: Intent?) {
+    override fun onNewIntent(intent: Intent) {
         super.onNewIntent(intent)
         // Assuming "extraMessage" is the key for the message in the intent extras
-        val message = intent?.getStringExtra("extraMessage")
+        val message = intent.getStringExtra("extraMessage")
         message?.let {
             messageTextView.text = it
         }

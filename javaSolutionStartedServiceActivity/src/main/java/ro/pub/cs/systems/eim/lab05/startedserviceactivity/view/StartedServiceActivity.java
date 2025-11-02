@@ -47,8 +47,6 @@ public class StartedServiceActivity extends AppCompatActivity {
         // Register with RECEIVER_EXPORTED for cross-app broadcasts
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             registerReceiver(startedServiceBroadcastReceiver, startedServiceIntentFilter, Context.RECEIVER_EXPORTED);
-        } else {
-            registerReceiver(startedServiceBroadcastReceiver, startedServiceIntentFilter);
         }
 
         // TODO: exercise 6 - start the service AFTER registering the receiver
