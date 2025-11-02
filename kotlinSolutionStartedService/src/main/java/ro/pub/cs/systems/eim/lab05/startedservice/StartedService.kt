@@ -17,24 +17,22 @@ class StartedService : Service() {
         super.onCreate()
         Log.d(Constants.TAG, "onCreate() method was invoked")
 
-        if (Build.VERSION.SDK_INT >= 26) {
-            val CHANNEL_ID = "my_channel_01"
-            val channel = NotificationChannel(
-                CHANNEL_ID,
-                "Channel human readable title",
-                NotificationManager.IMPORTANCE_DEFAULT
-            )
+        val CHANNEL_ID = "my_channel_01"
+        val channel = NotificationChannel(
+            CHANNEL_ID,
+            "Channel human readable title",
+            NotificationManager.IMPORTANCE_DEFAULT
+        )
 
-            (getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager)
-                .createNotificationChannel(channel)
+        (getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager)
+            .createNotificationChannel(channel)
 
-            val notification: Notification = NotificationCompat.Builder(this, CHANNEL_ID)
-                .setContentTitle("")
-                .setContentText("")
-                .build()
+        val notification: Notification = NotificationCompat.Builder(this, CHANNEL_ID)
+            .setContentTitle("")
+            .setContentText("")
+            .build()
 
-            startForeground(1, notification)
-        }
+        startForeground(1, notification)
     }
 
     override fun onBind(intent: Intent): IBinder? {

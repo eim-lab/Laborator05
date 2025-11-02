@@ -43,7 +43,7 @@ class ProcessingThread(private val context: Context) : Thread() {
 
     private fun sleep() {
         try {
-            Thread.sleep(Constants.SLEEP_TIME)
+            sleep(Constants.SLEEP_TIME)
         } catch (interruptedException: InterruptedException) {
             Log.e(Constants.TAG, interruptedException.message ?: "InterruptedException occurred")
             interruptedException.printStackTrace()

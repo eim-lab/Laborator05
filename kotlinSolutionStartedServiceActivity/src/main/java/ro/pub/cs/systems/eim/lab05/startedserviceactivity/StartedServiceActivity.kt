@@ -53,10 +53,10 @@ class StartedServiceActivity : AppCompatActivity() {
         // TODO: exercise 6 - start the service AFTER registering the receiver
         if (!serviceStarted) {
             val intent = Intent().apply {
-                setComponent(ComponentName(
+                component = ComponentName(
                     "ro.pub.cs.systems.eim.lab05.startedservice",
                     "ro.pub.cs.systems.eim.lab05.startedservice.StartedService"
-                ))
+                )
             }
             startForegroundService(intent)
             serviceStarted = true
@@ -73,10 +73,10 @@ class StartedServiceActivity : AppCompatActivity() {
     override fun onDestroy() {
         // TODO: exercise 8d - stop the service
         val intent = Intent().apply {
-            setComponent(ComponentName(
+            component = ComponentName(
                 "ro.pub.cs.systems.eim.lab05.startedservice",
                 "ro.pub.cs.systems.eim.lab05.startedservice.StartedService"
-            ))
+            )
         }
         stopService(intent)
 
