@@ -4,9 +4,7 @@ import android.app.Notification
 import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.app.Service
-import android.content.Context
 import android.content.Intent
-import android.os.Build
 import android.os.IBinder
 import androidx.core.app.NotificationCompat
 import android.util.Log
@@ -17,17 +15,17 @@ class StartedService : Service() {
         super.onCreate()
         Log.d(Constants.TAG, "onCreate() method was invoked")
 
-        val CHANNEL_ID = "my_channel_01"
+        val channelId = "my_channel_01"
         val channel = NotificationChannel(
-            CHANNEL_ID,
+            channelId,
             "Channel human readable title",
             NotificationManager.IMPORTANCE_DEFAULT
         )
 
-        (getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager)
+        (getSystemService(NOTIFICATION_SERVICE) as NotificationManager)
             .createNotificationChannel(channel)
 
-        val notification: Notification = NotificationCompat.Builder(this, CHANNEL_ID)
+        val notification: Notification = NotificationCompat.Builder(this, channelId)
             .setContentTitle("")
             .setContentText("")
             .build()

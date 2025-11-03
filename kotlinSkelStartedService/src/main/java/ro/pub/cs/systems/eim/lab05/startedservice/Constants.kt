@@ -1,3 +1,5 @@
+@file:Suppress("unused")
+
 package ro.pub.cs.systems.eim.lab05.startedservice
 
 import android.annotation.SuppressLint
