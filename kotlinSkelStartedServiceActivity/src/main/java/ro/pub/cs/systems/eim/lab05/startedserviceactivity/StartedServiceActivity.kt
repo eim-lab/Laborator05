@@ -33,10 +33,10 @@ class StartedServiceActivity : AppCompatActivity() {
         super.onResume()
 
         // TODO: exercise 6c - register the broadcast receiver with the corresponding intent filter
-        // Note: RECEIVER_NOT_EXPORTED is required for Android 13+ (API 33+)
+        // Note: RECEIVER_EXPORTED is required, the broadcasts come from another app (StartedService)
         if (::startedServiceBroadcastReceiver.isInitialized && ::startedServiceIntentFilter.isInitialized) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-                registerReceiver(startedServiceBroadcastReceiver, startedServiceIntentFilter, Context.RECEIVER_NOT_EXPORTED)
+                registerReceiver(startedServiceBroadcastReceiver, startedServiceIntentFilter, Context.RECEIVER_EXPORTED)
             }
         }
     }
