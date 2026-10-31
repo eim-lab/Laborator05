@@ -59,7 +59,7 @@ public class StartedService extends Service {
         super.onDestroy();
     }
 
-    // TODO exercise 5 - implement onStartCommand method
+    // TODO exercise 3 - implement onStartCommand method
     // it needs to start a thread that sends three different type of broadcast intents
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {

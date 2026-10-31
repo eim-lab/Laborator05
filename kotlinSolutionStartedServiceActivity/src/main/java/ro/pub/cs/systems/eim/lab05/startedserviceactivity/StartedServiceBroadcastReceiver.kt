@@ -9,7 +9,7 @@ import android.widget.TextView
 class StartedServiceBroadcastReceiver(private val messageTextView: TextView?) : BroadcastReceiver() {
 
     override fun onReceive(context: Context, intent: Intent) {
-        // TODO: exercise 7 - get the action and the extra information from the intent
+        // TODO: exercise 5 - get the action and the extra information from the intent
         // and set the text on the messageTextView
         val action = intent.action
         Log.d(Constants.TAG, "onReceive called with action: $action")
@@ -32,7 +32,7 @@ class StartedServiceBroadcastReceiver(private val messageTextView: TextView?) : 
             Log.d(Constants.TAG, "messageTextView is null or data is null. TextView: ${messageTextView != null}, data: $data")
         }
 
-        // TODO: exercise 9 - restart the activity through an intent
+        // TODO: exercise 7 - restart the activity through an intent
         // if the messageTextView is not available
         // (Currently commented out - uncomment if needed)
         /*if (messageTextView == null && data != null) {

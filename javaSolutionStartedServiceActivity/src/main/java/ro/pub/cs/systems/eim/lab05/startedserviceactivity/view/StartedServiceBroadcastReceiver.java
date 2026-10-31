@@ -12,7 +12,7 @@ public class StartedServiceBroadcastReceiver extends BroadcastReceiver {
 
     private TextView messageTextView;
 
-    // TODO: exercise 10 - default constructor
+    // TODO: exercise 7 - default constructor
     public StartedServiceBroadcastReceiver() {
         this.messageTextView = null;
     }
@@ -23,7 +23,7 @@ public class StartedServiceBroadcastReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        // TODO: exercise 7 - get the action and the extra information from the intent
+        // TODO: exercise 5 - get the action and the extra information from the intent
         // and set the text on the messageTextView
 
         String action = intent.getAction();
@@ -54,7 +54,7 @@ public class StartedServiceBroadcastReceiver extends BroadcastReceiver {
             context.startActivity(startedServiceActivityIntent);
         }*/
 
-        // TODO: exercise 10 - restart the activity through an intent
+        // TODO: exercise 7 - restart the activity through an intent
         // if the messageTextView is not available
     }
 }

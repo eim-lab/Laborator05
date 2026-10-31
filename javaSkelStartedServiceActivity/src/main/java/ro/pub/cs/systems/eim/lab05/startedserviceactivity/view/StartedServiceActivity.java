@@ -27,7 +27,7 @@ public class StartedServiceActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
-        // TODO: exercise 8c - register the broadcast receiver with the corresponding intent filter
+        // TODO: exercise 6c - register the broadcast receiver with the corresponding intent filter
         // Note: RECEIVER_NOT_EXPORTED is required for Android 13+ (API 33+)
         if (startedServiceBroadcastReceiver != null && startedServiceIntentFilter != null) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
@@ -40,7 +40,7 @@ public class StartedServiceActivity extends AppCompatActivity {
 
     @Override
     protected void onPause() {
-        // TODO: exercise 8c - unregister the broadcast receiver
+        // TODO: exercise 6c - unregister the broadcast receiver
         if (startedServiceBroadcastReceiver != null) {
             unregisterReceiver(startedServiceBroadcastReceiver);
         }
