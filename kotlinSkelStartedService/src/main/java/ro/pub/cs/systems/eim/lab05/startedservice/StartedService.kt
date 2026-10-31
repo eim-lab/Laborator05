@@ -33,7 +33,7 @@ class StartedService : Service() {
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         Log.d(Constants.TAG, "onStartCommand() method was invoked")
-        // TODO: exercise 5 - implement and start the ProcessingThread
+        // TODO: exercise 3 - implement and start the ProcessingThread
         return START_REDELIVER_INTENT
     }
 }
