@@ -1,10 +1,14 @@
 package ro.pub.cs.systems.eim.lab05.startedserviceactivity.view;
 
+import android.Manifest;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.pm.PackageManager;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
@@ -14,6 +18,9 @@ import ro.pub.cs.systems.eim.lab05.startedserviceactivity.R;
 import ro.pub.cs.systems.eim.lab05.startedserviceactivity.general.Constants;
 
 public class StartedServiceActivity extends AppCompatActivity {
+
+    // TODO: exercise 7 - read by the receiver declared in the manifest
+    public static boolean isVisible = false;
 
     private TextView messageTextView;
     private StartedServiceBroadcastReceiver startedServiceBroadcastReceiver;
@@ -37,11 +44,21 @@ public class StartedServiceActivity extends AppCompatActivity {
         startedServiceIntentFilter.addAction(Constants.ACTION_STRING);
         startedServiceIntentFilter.addAction(Constants.ACTION_INTEGER);
         startedServiceIntentFilter.addAction(Constants.ACTION_ARRAY_LIST);
+
+        // TODO: exercise 7 - request the permission to post notifications (Android 13+)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU &&
+                ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(
+                    this,
+                    new String[]{Manifest.permission.POST_NOTIFICATIONS},
+                    Constants.PERMISSION_REQUEST_POST_NOTIFICATIONS);
+        }
     }
 
     @Override
     protected void onResume() {
         super.onResume();
+        isVisible = true;
         
         // TODO: exercise 6c - register the broadcast receiver with the corresponding intent filter
         // Register with RECEIVER_EXPORTED for cross-app broadcasts
@@ -62,6 +79,7 @@ public class StartedServiceActivity extends AppCompatActivity {
     protected void onPause() {
         // TODO: exercise 6c - unregister the broadcast receiver
         unregisterReceiver(startedServiceBroadcastReceiver);
+        isVisible = false;
 
         super.onPause();
     }

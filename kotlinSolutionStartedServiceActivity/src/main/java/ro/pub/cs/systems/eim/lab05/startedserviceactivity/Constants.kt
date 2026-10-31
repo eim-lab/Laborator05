@@ -12,4 +12,8 @@ object Constants {
 
     const val MESSAGE = "ro.pub.cs.systems.eim.lab05.startedserviceactivity.message"
 
+    const val CHANNEL_ID = "started_service_messages"
+    const val NOTIFICATION_ID = 1
+    const val PERMISSION_REQUEST_POST_NOTIFICATIONS = 1
+
 }

@@ -12,4 +12,8 @@ public interface Constants {
 
     final public static String MESSAGE = "ro.pub.cs.systems.eim.lab05.startedserviceactivity.message";
 
+    final public static String CHANNEL_ID = "started_service_messages";
+    final public static int NOTIFICATION_ID = 1;
+    final public static int PERMISSION_REQUEST_POST_NOTIFICATIONS = 1;
+
 }
