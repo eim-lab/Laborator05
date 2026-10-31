@@ -1,16 +1,25 @@
 package ro.pub.cs.systems.eim.lab05.startedserviceactivity
 
+import android.Manifest
 import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
+import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
 import android.text.method.ScrollingMovementMethod
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 
 class StartedServiceActivity : AppCompatActivity() {
+
+    companion object {
+        // TODO: exercise 7 - read by the receiver declared in the manifest
+        var isVisible = false
+    }
 
     private lateinit var messageTextView: TextView
     private lateinit var startedServiceBroadcastReceiver: StartedServiceBroadcastReceiver
@@ -36,10 +45,22 @@ class StartedServiceActivity : AppCompatActivity() {
         }
 
         // TODO: exercise 4 - start the service (moved to onResume to start after registering receiver)
+
+        // TODO: exercise 7 - request the permission to post notifications (Android 13+)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU &&
+            ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED
+        ) {
+            ActivityCompat.requestPermissions(
+                this,
+                arrayOf(Manifest.permission.POST_NOTIFICATIONS),
+                Constants.PERMISSION_REQUEST_POST_NOTIFICATIONS
+            )
+        }
     }
 
     override fun onResume() {
         super.onResume()
+        isVisible = true
 
         // TODO: exercise 6c - register the broadcast receiver with the corresponding intent filter
         // Register with RECEIVER_EXPORTED for cross-app broadcasts
@@ -66,6 +87,7 @@ class StartedServiceActivity : AppCompatActivity() {
     override fun onPause() {
         // TODO: exercise 6c - unregister the broadcast receiver
         unregisterReceiver(startedServiceBroadcastReceiver)
+        isVisible = false
 
         super.onPause()
     }

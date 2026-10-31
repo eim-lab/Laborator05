@@ -11,6 +11,8 @@ import ro.pub.cs.systems.eim.lab05.startedserviceactivity.R;
 
 public class StartedServiceActivity extends AppCompatActivity {
 
+    // TODO: exercise 7 - public static boolean isVisible, read by the receiver declared in the manifest
+
     private TextView messageTextView;
     private StartedServiceBroadcastReceiver startedServiceBroadcastReceiver;
     private IntentFilter startedServiceIntentFilter;
@@ -21,11 +23,14 @@ public class StartedServiceActivity extends AppCompatActivity {
         setContentView(R.layout.activity_started_service);
 
         messageTextView = (TextView)findViewById(R.id.message_text_view);
+
+        // TODO: exercise 7 - request the permission to post notifications (Android 13+)
     }
 
     @Override
     protected void onResume() {
         super.onResume();
+        // TODO: exercise 7 - isVisible = true
 
         // TODO: exercise 6c - register the broadcast receiver with the corresponding intent filter
         // Note: RECEIVER_EXPORTED is required, the broadcasts come from another app (StartedService)
@@ -40,6 +45,7 @@ public class StartedServiceActivity extends AppCompatActivity {
 
     @Override
     protected void onPause() {
+        // TODO: exercise 7 - isVisible = false
         // TODO: exercise 6c - unregister the broadcast receiver
         if (startedServiceBroadcastReceiver != null) {
             unregisterReceiver(startedServiceBroadcastReceiver);
@@ -52,5 +58,9 @@ public class StartedServiceActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
     }
+
+    // TODO: exercise 7 - implement the onNewIntent callback method
+    // get the message from the extra field of the intent
+    // and display it in the messageTextView
 
 }
