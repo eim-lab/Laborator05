@@ -19,6 +19,8 @@ interface Constants {
 
         const val DATA = "ro.pub.cs.systems.eim.lab05.startedservice.data"
 
+        const val MESSAGE = "ro.pub.cs.systems.eim.lab05.startedserviceactivity.message"
+
         const val STRING_DATA = "EIM"
         val INTEGER_DATA: Int = SimpleDateFormat("yyyy").format(Calendar.getInstance().time).toInt()
 
